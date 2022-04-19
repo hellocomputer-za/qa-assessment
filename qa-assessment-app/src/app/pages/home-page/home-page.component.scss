@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landing-page{
+   font-family: Source Sans Pro, Verdana, Geneva, Tahoma, sans-serif;
+   color: aliceblue;
+}
+header{
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6));
+  background-image: url("/assets/images/city.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header h2 {
+  font-size: 5.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+}
+header p{
+  font-size: 21px;
+  letter-spacing: 12px;
+  max-width: 80%;
+  margin: 1.7rem auto;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+header .btn{
+  text-decoration: none;
+  padding: 13px 30px;
+  background-color: crimson;
+  color: #fff;
+  font-size: 18px;
+  transition: all .4s ease;
+}
+header .btn:hover{
+  opacity: 70px;
+  box-shadow: 0 0 12px crimsona;
+}
