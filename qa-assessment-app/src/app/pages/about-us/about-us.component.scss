@@ -1,0 +1,27 @@
+.paragraph{
+    padding: 100px 27.66667%;
+    font-family: cursive;
+    box-sizing: border-box;
+    text-align: left;
+}
+.paragraph h1{
+    font-size: 60px;
+    line-height: 62px;
+    letter-spacing: -2px;
+    font-weight: 700;
+    display: block;
+    margin: 16px 0px 32px 0px;
+}
+.paragraph h2{
+    font-weight: bold;
+}
+.cta{
+    text-decoration: none;
+    color: #111111;
+    cursor: pointer;    
+}
+
+a.cta:hover, a.cta:active {
+    font-size: 150%;
+    color: purple;
+}
