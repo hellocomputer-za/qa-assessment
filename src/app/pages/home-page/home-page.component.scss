@@ -1,48 +1,141 @@
-*{
+// *{
+//   margin:0; 
+//   padding:0;
+//   box-sizing: border-box;
+// }
+.body {
+  background-color: grey;
+  // background-size: cover;
+}
+.banner{
+  position: relative;
+  background:url("/assets/images/bg.png");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  @media (max-width: 768px) {
+    padding: 250px 0 200px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    position: relative;
+    bottom: 230px;
+  }
+}
+#triangle-up {
+  position: absolute;
+  bottom: 0;
+  left: 47%;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid grey;
+  @media (max-width: 768px) {
+    left:36%;
+  }
+}
+#arrow:after {
+  position: absolute;
+  content: ' \02C5';
+  color : white;
+  bottom: 30px;
+  left: 50%;
+  z-index: 2;
+  @media (max-width: 768px) {
+    left: 46%;
+  }
+}
+.banner h2 {
+  // margin: 0;
+  // text-align: center;
+  // padding: 110px 100px 85px 80px; 
+  left: 200px;
+  right: 200px;
+  font-size: 115px;
+  font-family: 'Rakkas', cursive;
+  font-weight: 1000;
+  color: #fff;  
+  @media (max-width: 768px) {
+    font-size: 34px;
+    left: 20px;
+    right: 20px;
+  }
+}
+.banner p {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  padding: 0 50% 0 0;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  @media (max-width: 768px) {
+    display: contents;
+    padding: 0px 1000px 0px 1000px;
+  }
+}
+.row {
+  display:grid;
+  flex-wrap: wrap;
+  padding: 92px 90px;
+  width: auto;
+  @media (max-width: 768px) {
+    padding: 0px 37px;
+  }
+}
+.btn {
+  display: inline-block;  
+  margin: -1em 72px 0;
+  color: #fff;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px 55px;
+  font-size: 16px;
+  font-weight: 1000;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.landing-page{
-   font-family: Source Sans Pro, Verdana, Geneva, Tahoma, sans-serif;
-   color: aliceblue;
+
+
+
+.intro {
+  margin: 0;
+  padding: 100px;
 }
-header{
-  min-height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6));
-  background-image: url("/assets/images/city.jpg");
-  background-size: cover;
-  background-position: center center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.intro h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #c5b75b;
+  font-family: 'Rakkas', cursive;
 }
-header h2 {
-  font-size: 5.3rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: black;
+.intro p {
+  // margin: 0;
+  text-align: center;
+  padding: 0px 40px 0 120px;
 }
-header p{
-  font-size: 21px;
-  letter-spacing: 12px;
-  max-width: 80%;
-  margin: 1.7rem auto;
-  text-transform: uppercase;
-  color: black;
-  font-weight: bold;
+.gallery h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #c5b75b;
+  font-family: 'Rakkas', cursive;
 }
-header .btn{
-  text-decoration: none;
-  padding: 13px 30px;
-  background-color: crimson;
-  color: #fff;
-  font-size: 18px;
-  transition: all .4s ease;
+
+.container_gallery{
+  max-width: 85%;
+  margin:20px auto;
 }
-header .btn:hover{
-  opacity: 70px;
-  box-shadow: 0 0 12px crimsona;
+
+.container_gallery .image-container{
+  columns:2 250px;
+  gap:15px;
+  padding-left: 20px;
+  @media (max-width: 768px) {
+    padding-left: 15px;
+  }
+}
+
+.container_gallery .image-container img{
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
 }
