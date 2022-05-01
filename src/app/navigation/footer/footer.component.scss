@@ -5,16 +5,12 @@
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     z-index: 2;
-    // padding-bottom: 100px;
-    // padding-top: 120px;
-    // padding-left: 2200px;
-    // padding-right: 120px;
-    // margin: 100px;
 }
  img{
     display: block;
-    padding-bottom: 0;
-    // padding-top: 22px;
+    @media (max-width: 768px) {
+        padding-left: 98px;
+    }
 }
 .fa-facebook:before {
     font-size: 23px;
