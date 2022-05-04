@@ -1,52 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .body {
   background-color: grey;
 }
-.banner{
+.banner {
   position: relative;
   background:url("/assets/images/bg.png");
   min-height: 100vh;
   background-size: cover;
   background-position: center;
   @media (max-width: 768px) {
+    background:url("/assets/images/sbg.png");
     padding: 250px 0 200px;
   }
 }
-
 @media (max-width: 768px) {
   .navbar {
    position: relative;
    bottom: 232px;
   }
 }
+@media (max-width: 768px) {
+  .container {
+  padding-right: 12px;
+  }
+}
 .navbar-dark .navbar-nav .nav-link {
   color: white !important;
 }
-
-#triangle-up {
-  position: absolute;
-  bottom: 0;
-  left: 47%;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid grey;
+.navbar-brand {
+  position: relative;
+  left: 77px;
   @media (max-width: 768px) {
-    left:36%;
+    left: 20px;
   }
 }
+#triangle-up { 
+  position: absolute; 
+  bottom: -1px; 
+  left: 48%; 
+  width: 0; 
+  height: 0; 
+  border-left: 26px solid transparent; 
+  border-right: 26px solid transparent;
+  border-bottom: 25px solid grey; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  @media (max-width: 768px) {
+    left: 43%;
+  }
+}
+
 #arrow:after {
   position: absolute;
+  width: 0; 
+  height: 0; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
   content: ' \02C5';
+  font-size: 12px;
   color : white;
-  bottom: 30px;
-  left: 50%;
+  bottom: 10px;
+  left: 49.7%;
   z-index: 2;
   @media (max-width: 768px) {
-    left: 46%;
+    left: 49%;
   }
 }
-.banner h2 {
+.content h2 {
   left: 200px;
   right: 200px;
   font-size: 115px;
@@ -54,48 +80,49 @@
   font-weight: 1000;
   color: #fff;  
   @media (max-width: 768px) {
-    font-size: 34px;
-    left: 20px;
-    right: 20px;
-    position: absolute;
-    top: 102px;
+    font-size: 45px;
   }
 }
-.banner p {
+.content .par {
   margin: 0;
   padding: 0 50% 0 0;
   font-size: 20px;
   font-family: 'Source Sans Pro', sans-serif;
   color: #fff;
   @media (max-width: 768px) {
-    padding: 5px;
-    position: relative;
-    bottom: 94px;
+    padding: 49px 0 68px 0;
+    font-size: 16px;
   }
 }
-.row {
-  display:grid;
-  flex-wrap: wrap;
-  padding: 92px 90px;
+
+.content {
   width: auto;
-  @media (max-width: 768px) {
-    padding: 0px 37px;
+  height: auto;
+  margin: auto;
+  padding: 65px 90px; 
+  color: #fff;
+  position: relative;
+    @media (max-width: 768px) {
+    padding: 0px 27px;
+    bottom: 95px;
   }
 }
-.btn {
-  display: inline-block;  
-  margin: -1em 72px 0;
-  color: #fff;
+
+.content .btn {
   border: 2px solid white;
   border-radius: 5px;
-  padding: 10px 55px;
+  padding: 10px 79px;
+  margin-top: 34px;
   font-size: 16px;
   font-weight: 1000;
   font-family: 'Source Sans Pro', sans-serif;
   @media (max-width: 768px) {
-    padding: 10px 56px;
-    margin: -1em 38px 0;
+    padding: 10px 97px;
   }
+}
+.content .btn a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .intro {
