@@ -1,48 +1,32 @@
 <section class="body">
-  <div class="banner">
+  <div class="hero-image"> 
     <nav class="navbar navbar-expand-lg navbar-dark p-md-3">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="/assets/images/logo.png" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/assets/images/logo.png"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          Menu<span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav" style="padding-right: 28px;">
           <div class="mx-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link active" aria-current="page">Intro</a>
+              <a class="nav-link active" aria-current="page"><span class="underline">Intro</span></a>
             </li>
             <li class="nav-item">
-              <a (click)="buttonClick('part1')" class="nav-link" href="#"
-                >Recipe</a
-              >
+              <a (click)="buttonClick('part1')" class="nav-link" href="#">Recipe</a>
             </li>
             <li class="nav-item">
-              <a (click)="buttonClick('part2')" class="nav-link" href="#"
-                >Gallery</a
-              >
+              <a (click)="buttonClick('part2')" class="nav-link" href="#">Gallery</a>
             </li>
             <li class="nav-item">
-              <a (click)="buttonClick('part3')" class="nav-link" href="#"
-                >Contact</a
-              >
+              <a (click)="buttonClick('part3')" class="nav-link" href="#">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="content">
-      <h2>Pear Parfait<br />with Bayleaf</h2>
+      <h2>Pear Parfait<br/>with Bayleaf</h2>
       <p class="par">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
         mollitia, molestiae quas vel sint commodi repudiandae consequuntur
@@ -52,11 +36,10 @@
       </p>
       <button class="btn"><a href="#">Read More</a></button>
     </div>
-    <div id="triangle-up"></div>
-    <div id="arrow"></div>
+    <img src="../assets/images/rect.png">
+    <img class="arrow" src="../assets/images/arrow.png">
   </div>
 
-  <!-- Intro -->
   <div id="part1">
     <div class="intro">
       <h1>The Recipe</h1>
@@ -70,7 +53,6 @@
       </p>
     </div>
   </div>
-  <!-- Gallery -->
   <div id="part2">
     <div class="gallery">
       <h1>Gallery</h1>
